@@ -251,6 +251,8 @@ h1 {
   color: var(--text);
   text-decoration: none;
   font-weight: 800;
+  display: block;
+  margin-right: 0.5rem;
 }
 
 .card-link:hover {
