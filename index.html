@@ -14,6 +14,7 @@
       <a class="brand" href="#top">Angi Helmsing</a>
       <nav class="nav">
         <a href="#work">Work</a>
+        <a href="#playable">Playable</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -33,8 +34,7 @@
           <div class="cta-row">
             <a class="btn primary" href="#work">View Work</a>
             <a class="btn ghost" href="KushBlog/index.html">Kush's Logbook</a>
-            <!-- tomorrow: replace with your live game link -->
-            <a class="btn ghost" href="pricks-game/game.html">Play Pricks</a>
+            <a class="btn ghost" href="#playable">Playable Experiments</a>
           </div>
         </div>
 
@@ -46,33 +46,16 @@
       </div>
     </section>
 
+    <!-- FEATURED WORK -->
     <section id="work" class="section">
       <div class="wrap">
         <div class="section-head">
           <h2>Featured Work</h2>
-
         </div>
 
         <div class="cards">
 
-          <article class="card">
-            <div class="thumb">
-              <img loading="lazy" src="images/pricks-game-preview.png" alt="Pricks game preview">
-            </div>
-
-            <div class="card-body">
-              <h3>Pricks: Avoid the Prickles</h3>
-              <p>HTML/CSS/JS mini game. Chill difficulty, spicy chips.</p>
-              <div class="tags">
-                <span>Web</span><span>JS</span><span>Game</span>
-              </div>
-              <a class="card-link" href="pricks-game/game.html">Play →</a>
-              <a class="card-link" href="https://youtu.be/c25bAnVFNDQ" target="_blank" rel="noopener">
-                Watch Comic Strip Intro →
-              </a>
-            </div>
-          </article>
-
+          <!-- Kush Logbook -->
           <article class="card">
             <div class="thumb">
               <img loading="lazy" src="images/kushblog-thumb.png" alt="Kush blog preview">
@@ -87,6 +70,27 @@
             </div>
           </article>
 
+          <!-- Comic Strip Intro (moved here so it isn't buried under a game card) -->
+          <article class="card">
+            <div class="thumb">
+              <img loading="lazy" src="images/tile-4.png" alt="Little Pricks comic strip intro">
+            </div>
+
+            <div class="card-body">
+              <h3>Little Pricks — Comic Strip Intro</h3>
+              <p>Animated intro that sets the tone for the Little Pricks universe.</p>
+
+              <div class="tags">
+                <span>Illustration</span><span>Story</span><span>Video</span>
+              </div>
+
+              <a class="card-link" href="https://youtu.be/c25bAnVFNDQ" target="_blank" rel="noopener">
+                Watch →
+              </a>
+            </div>
+          </article>
+
+          <!-- Unreal -->
           <article class="card">
             <div class="thumb">
               <img loading="lazy" src="images/unreal-thumb.png" alt="Unreal project preview">
@@ -98,10 +102,10 @@
                 <span>Unreal Engine</span><span>Blueprints</span>
               </div>
               <a class="card-link" href="#" data-lightbox="images/unreal-thumb.png">View →</a>
-
             </div>
           </article>
 
+          <!-- Branding -->
           <article class="card">
             <div class="thumb">
               <img loading="lazy" src="images/branding-thumb.png" alt="Branding preview">
@@ -113,7 +117,6 @@
                 <span>Branding</span><span>Logo</span>
               </div>
               <a class="card-link" href="#" data-lightbox="images/branding-thumb.png">View →</a>
-
             </div>
           </article>
 
@@ -121,6 +124,80 @@
       </div>
     </section>
 
+    <!-- PLAYABLE EXPERIMENTS -->
+    <section id="playable" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Playable Experiments</h2>
+          <p class="muted">Small web games with big personality.</p>
+        </div>
+
+        <div class="cards">
+
+          <!-- Kush game -->
+          <article class="card">
+            <div class="thumb">
+              <img loading="lazy" src="images/pricks-game-preview.png" alt="Kush: Avoid the Prickles game preview">
+            </div>
+
+            <div class="card-body">
+              <h3>Kush: Avoid the Prickles</h3>
+              <p>Slow reflex mini game. Chill vibe, spicy consequences.</p>
+              <p class="muted"><strong>How to play:</strong> Press <strong>Space Bar</strong> to jump over incoming
+                Prickles.</p>
+
+              <div class="tags">
+                <span>Web</span><span>JS</span><span>Game</span>
+              </div>
+
+              <a class="card-link" href="pricks-game/game.html">Play →</a>
+            </div>
+          </article>
+
+          <!-- Nuggs game -->
+          <article class="card">
+            <div class="thumb">
+              <img loading="lazy" src="images/nuggs-nom-nom.png" alt="Nuggs: Nom Nom Nom game preview">
+            </div>
+
+            <div class="card-body">
+              <h3>Nuggs: Nom Nom Nom</h3>
+              <p>Snack collecting chaos. Gummies make you “stoned” and floaty.</p>
+              <p class="muted"><strong>How to play:</strong> Use <strong>← ↑ ↓ →</strong> to move.</p>
+
+              <div class="tags">
+                <span>Web</span><span>JS</span><span>Game</span>
+              </div>
+
+              <a class="card-link" href="nuggs-project/index.html">Play →</a>
+            </div>
+          </article>
+
+          <!-- Dank game -->
+          <article class="card">
+            <div class="thumb">
+              <img loading="lazy" src="images/dank-trust-me.png" alt="Dank: Trust Me game preview">
+            </div>
+
+            <div class="card-body">
+              <h3>Dank: Trust Me</h3>
+              <p>Memory game with unreliable help. Sometimes he nails it… sometimes he absolutely doesn’t.</p>
+              <p class="muted"><strong>How to play:</strong> Click tiles to match pairs. Use <strong>Ask Dank</strong>
+                for hints (limited).</p>
+
+              <div class="tags">
+                <span>Web</span><span>JS</span><span>Game</span>
+              </div>
+
+              <a class="card-link" href="dank-project/index.html">Play →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE WORK -->
     <section id="more-work" class="section">
       <div class="wrap">
         <div class="section-head">
@@ -140,6 +217,7 @@
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="wrap">
         <div class="section-head">
@@ -149,8 +227,8 @@
         <div class="about">
           <p>
             I'm a self-taught designer who creates brands, finisher medals, game environments in Unreal Engine, and
-            edits videos. I like clean
-            visuals, strong typography, and projects with personality.
+            edits videos.
+            I like clean visuals, strong typography, and projects with personality.
           </p>
           <p class="muted">
             Tools: Illustrator • Premiere Pro • Unreal Engine • HTML/CSS/JS
@@ -159,6 +237,7 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="wrap contact">
         <h2>Contact</h2>
@@ -168,7 +247,6 @@
           target="_blank" rel="noopener">
           Email me
         </a>
-
       </div>
     </section>
 
@@ -178,6 +256,8 @@
       </div>
     </footer>
   </main>
+
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" aria-hidden="true">
     <button class="lightbox-close" type="button" aria-label="Close">×</button>
     <img class="lightbox-img" id="lightboxImg" alt="">
@@ -210,10 +290,7 @@
         return;
       }
 
-      if (
-        e.target === lightbox ||
-        e.target === closeBtn
-      ) {
+      if (e.target === lightbox || e.target === closeBtn) {
         closeLightbox();
       }
     });
