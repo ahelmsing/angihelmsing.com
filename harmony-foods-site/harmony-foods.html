@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Foods — Interactive World-Building</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* ===== Container ===== */
+    .case-study {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 20px 64px;
+    }
+
+    /* ===== Hero header ===== */
+    .case-hero {
+      background: #0d2a4a;
+      color: #fff;
+      border-radius: 14px;
+      padding: 26px 24px;
+      margin-bottom: 22px;
+    }
+
+    .case-hero h1 {
+      margin: 0 0 6px;
+      font-size: 2rem;
+    }
+
+    .case-hero p {
+      margin: 0;
+      opacity: 0.9;
+    }
+
+    /* ===== Sections ===== */
+    .case-section {
+      margin: 36px 0;
+    }
+
+    .case-section h2 {
+      margin-bottom: 10px;
+    }
+
+    .case-section p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Image roles ===== */
+    .img-hero {
+      display: block;
+      max-width: 900px;
+      width: 100%;
+      margin: 20px auto 0;
+      border-radius: 12px;
+    }
+
+    .img-context {
+      display: block;
+      max-width: 520px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    .img-detail {
+      display: block;
+      max-width: 380px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+
+    /* ===== Split layout ===== */
+    .case-split {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .case-split.reverse .split-media {
+      order: 2;
+    }
+
+    .case-divider {
+      height: 1px;
+      background: rgba(0, 0, 0, 0.08);
+      margin: 40px 0;
+    }
+
+    /* ===== Mobile ===== */
+    @media (max-width: 820px) {
+      .case-split {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="case-study">
+
+    <header class="case-hero">
+      <h1>Harmony Foods</h1>
+      <p>An in-universe interactive brand experience inside the Little Pricks universe.</p>
+    </header>
+
+    <!-- HERO -->
+    <img class="img-hero" src="images/harmony-foods/Screenshot 2026-01-31 at 11-20-37 Harmony Foods.png"
+      alt="Harmony Foods homepage">
+
+    <!-- OVERVIEW -->
+    <section class="case-split case-section">
+      <div>
+        <h2>Overview</h2>
+        <p>
+          Harmony Foods is a fictional company that exists inside the Little Pricks universe.
+          Rather than functioning as a traditional corporate website, the site was designed
+          as an explorable, narrative-driven experience.
+        </p>
+        <p>
+          The goal was to encourage discovery while maintaining the appearance of a legitimate
+          corporate presence.
+        </p>
+      </div>
+
+      <div class="split-media">
+        <img class="img-context" src="images/harmony-foods/Screenshot 2026-01-31 at 11-21-36 Harmony Foods.png"
+          alt="Brand ecosystem">
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- WORLD CONTEXT -->
+    <section class="case-split reverse case-section">
+      <div>
+        <h2>World Context</h2>
+        <p>
+          On the surface, Harmony Foods presents itself as wholesome and trustworthy.
+          Beneath that surface are internal systems that suggest a much darker structure.
+        </p>
+      </div>
+
+      <div class="split-media">
+        <img class="img-context" src="images/harmony-foods/Screenshot 2026-01-31 at 11-27-30 Harmony Foods.png"
+          alt="Public site navigation">
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <!-- INTERACTION -->
+    <section class="case-split case-section">
+      <div>
+        <h2>Interaction as Storytelling</h2>
+        <p>
+          Interactivity is used as a narrative device. Visitors uncover information by
+          exploring rather than being guided.
+        </p>
+      </div>
+
+      <div class="split-media">
+        <img class="img-detail"
+          src="images/harmony-foods/Screenshot 2026-01-31 at 11-27-07 Employee Access Harmony Foods.png"
+          alt="Employee access">
+      </div>
+    </section>
+
+    <!-- FALKEN TERMINAL -->
+    <img class="img-hero" src="images/harmony-foods/Screenshot 2026-01-31 at 11-29-41 Access Terminal Harmony Foods.png"
+      alt="Falken terminal">
+
+    <div class="case-divider"></div>
+
+    <!-- INTERNAL SYSTEMS -->
+    <section class="case-split reverse case-section">
+      <div>
+        <h2>Internal Systems</h2>
+        <p>
+          The internal archive shifts the tone from friendly branding to a monitored,
+          bureaucratic environment.
+        </p>
+      </div>
+
+      <div class="split-media">
+        <img class="img-context"
+          src="images/harmony-foods/Screenshot 2026-01-31 at 11-32-39 PRICKLES Index Harmony Foods.png"
+          alt="PRICKLES index">
+      </div>
+    </section>
+
+    <!-- PRK-009 -->
+    <img class="img-hero" src="images/harmony-foods/Screenshot 2026-01-31 at 11-30-41 PRK-009 Harmony Foods.png"
+      alt="PRK-009 report">
+
+    <div class="case-divider"></div>
+
+    <!-- ECOSYSTEM -->
+    <section class="case-split case-section">
+      <div>
+        <h2>Expanded Brand Ecosystem</h2>
+        <p>
+          Research divisions and partner brands reinforce the sense that Harmony Foods
+          is only one piece of a much larger system.
+        </p>
+      </div>
+
+      <div class="split-media">
+        <img class="img-context"
+          src="images/harmony-foods/Screenshot 2026-01-31 at 11-22-13 TruFlavor Labs Harmony Foods.png"
+          alt="TruFlavor Labs">
+      </div>
+    </section>
+
+    <div class="case-divider"></div>
+
+    <section class="case-section">
+      <h2>Why This Project Matters</h2>
+      <p>
+        This project demonstrates how web design can function as narrative world-building,
+        blurring the line between branding, storytelling, and play.
+      </p>
+    </section>
+
+  </main>
+</body>
+
+</html>

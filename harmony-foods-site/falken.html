@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Access Terminal | Harmony Foods</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="theme-harmony terminal-page">
+  <main class="terminal-wrap" aria-label="Access terminal">
+    <div class="terminal-card" role="region" aria-live="polite">
+      <div class="terminal-top">
+        <div class="terminal-dot"></div>
+        <div class="terminal-title">HF-ACCESS NODE</div>
+        <div class="terminal-status">CONNECTED</div>
+      </div>
+
+      <div class="terminal-screen" id="terminal">
+        <p class="t-line">HARMONY FOODS SECURE ACCESS GATEWAY</p>
+        <p class="t-line muted">Session established. Identity verification pending.</p>
+        <p class="t-spacer"></p>
+
+        <p class="t-line prompt">GREETINGS, PROFESSOR FALKEN.</p>
+        <p class="t-line">WOULD YOU LIKE TO PLAY A GAME?</p>
+        <div class="t-cursor" aria-hidden="true"><span class="cursor"></span></div>
+
+        <p class="t-spacer"></p>
+        <p class="t-line muted">AVAILABLE OPTIONS</p>
+
+        <div class="t-menu" role="list">
+          <a class="t-item" role="listitem" href="internal.html">
+            1. INTERNAL SYSTEM REVIEW
+          </a>
+
+          <button class="t-item disabled" type="button" disabled aria-disabled="true" title="Not available">
+            2. GLOBAL THERMONUCLEAR WAR
+          </button>
+
+          <button class="t-item disabled" type="button" disabled aria-disabled="true" title="Not available">
+            3. SYSTEM DIAGNOSTICS
+          </button>
+
+          <a class="t-item subtle" role="listitem" href="access.html">
+            0. RETURN TO SIGN IN
+          </a>
+        </div>
+
+        <p class="t-spacer"></p>
+        <p class="t-line muted small">NOTICE: This system is monitored and recorded.</p>
+      </div>
+      <!-- TTT PANEL (hidden unless #ttt) -->
+      <section id="tttPanel" class="ttt" hidden>
+        <div class="ttt-head">
+          <div class="ttt-title">TIC TAC TOE</div>
+          <div class="ttt-sub">Verification exercise. Complete to continue.</div>
+        </div>
+
+        <div class="ttt-board" id="tttBoard" role="grid" aria-label="Tic Tac Toe board">
+          <button class="ttt-cell" type="button" data-i="0" aria-label="Cell 1"></button>
+          <button class="ttt-cell" type="button" data-i="1" aria-label="Cell 2"></button>
+          <button class="ttt-cell" type="button" data-i="2" aria-label="Cell 3"></button>
+          <button class="ttt-cell" type="button" data-i="3" aria-label="Cell 4"></button>
+          <button class="ttt-cell" type="button" data-i="4" aria-label="Cell 5"></button>
+          <button class="ttt-cell" type="button" data-i="5" aria-label="Cell 6"></button>
+          <button class="ttt-cell" type="button" data-i="6" aria-label="Cell 7"></button>
+          <button class="ttt-cell" type="button" data-i="7" aria-label="Cell 8"></button>
+          <button class="ttt-cell" type="button" data-i="8" aria-label="Cell 9"></button>
+        </div>
+
+        <div class="ttt-status" id="tttStatus">Select a square.</div>
+
+        <div class="ttt-actions">
+          <button class="ttt-btn" type="button" id="tttReset">Reset</button>
+          <a class="ttt-btn ttt-btn-ghost" href="internal.html">Return to archive</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="js/falken.js"></script>
+  <script src="js/falken-ttt.js"></script>
+</body>
+
+</html>

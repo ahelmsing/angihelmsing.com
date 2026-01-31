@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Session Terminated | Harmony Foods</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Tiny inline styles so we don't risk breaking your main CSS */
+    .term-wrap {
+      min-height: 70vh;
+      display: grid;
+      place-items: center;
+      padding: 48px 16px;
+    }
+
+    .term-card {
+      width: min(860px, 100%);
+      border-radius: 18px;
+      padding: 22px;
+      background: rgba(10, 16, 26, .75);
+      border: 1px solid rgba(255, 255, 255, .10);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+      color: #FAFAFA;
+    }
+
+    .term-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      opacity: .9;
+      font-size: 12px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .term-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: #ff4d4d;
+      box-shadow: 0 0 0 4px rgba(255, 77, 77, .18);
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .term-body {
+      margin-top: 18px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+
+    .term-line {
+      margin: 8px 0;
+    }
+
+    .term-warn {
+      color: #ffb3b3;
+    }
+
+    .term-actions {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .term-actions a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      white-space: nowrap;
+      background: rgba(255, 255, 255, .10);
+      border: 1px solid rgba(255, 255, 255, .14);
+      color: #FAFAFA;
+    }
+
+    .term-actions a:hover {
+      background: rgba(255, 255, 255, .16);
+    }
+  </style>
+</head>
+
+<body class="theme-harmony">
+
+
+  <main class="term-wrap">
+    <div class="term-card" role="region" aria-live="polite">
+      <div class="term-top">
+        <div><span class="term-dot" aria-hidden="true"></span>HF-SECURITY NODE</div>
+        <div class="term-warn">SESSION TERMINATED</div>
+      </div>
+
+      <div class="term-body">
+        <div class="term-line">HARMONY FOODS NETWORK SECURITY</div>
+        <div class="term-line term-warn">ALERT: UNAUTHORIZED RESEARCH ARCHIVE ACCESS DETECTED</div>
+        <div class="term-line">Trace ID: HF-PRK-Δ14</div>
+        <div class="term-line">Action: Public session reset • Credentials invalidated • Audit log sealed</div>
+        <div class="term-line term-warn">NOTICE: If you are an employee, report to your supervisor. If you are not… nice
+          try.</div>
+      </div>
+
+      <div class="term-actions">
+        <a href="index.html">Return to Home</a>
+        <a href="access.html">Employee Access</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

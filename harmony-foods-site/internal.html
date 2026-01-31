@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Internal System Review | Harmony Foods</title>
+  <meta name="description" content="Internal system review archive (authorized personnel only)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=99">
+</head>
+
+<body class="theme-harmony internal-page">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Harmony Foods home">
+        <img class="logo-img" src="logos/HarmonyFoods_HarmonyFoods.png" alt="Harmony Foods" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav class="nav" id="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="brands.html">Brands</a>
+        <a href="sourcing.html">Sourcing</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+        <a href="investors.html">Investor Relations</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="internal-wrap">
+    <div class="container">
+      <div class="internal-top">
+        <div>
+          <div class="internal-kicker">Employee Access / Internal System Review</div>
+          <h1 class="internal-title">Internal Archive</h1>
+          <p class="internal-sub">
+            Authorized personnel only. Activity is logged and monitored.
+          </p>
+        </div>
+
+        <div class="internal-badges" aria-label="Access level and status">
+          <span class="i-badge">ACCESS: LEVEL 2</span>
+          <span class="i-badge i-badge-warn">INTERNAL ONLY</span>
+        </div>
+      </div>
+
+      <section class="internal-grid" aria-label="Internal archive layout">
+        <!-- LEFT: folders -->
+        <aside class="i-panel i-folders" aria-label="Folders">
+          <div class="i-panel-head">
+            <div class="i-panel-title">Folders</div>
+            <div class="i-panel-meta">6</div>
+          </div>
+
+          <button class="i-folder is-active" type="button" data-folder="incidents">
+            <span class="i-folder-name">Incident Reports</span>
+            <span class="i-folder-count">3</span>
+          </button>
+
+          <button class="i-folder" type="button" data-folder="memos">
+            <span class="i-folder-name">Internal Memos</span>
+            <span class="i-folder-count">3</span>
+          </button>
+
+          <button class="i-folder" type="button" data-folder="audits">
+            <span class="i-folder-name">Audit Logs</span>
+            <span class="i-folder-count">2</span>
+          </button>
+
+          <button class="i-folder" type="button" data-folder="attachments">
+            <span class="i-folder-name">Attachments</span>
+            <span class="i-folder-count">2</span>
+          </button>
+
+          <button class="i-folder is-locked" type="button" data-folder="restricted" id="restrictedBtn">
+            <span class="i-folder-name">Restricted</span>
+            <span class="i-folder-count" id="restrictedStatus">LOCKED</span>
+          </button>
+
+        </aside>
+
+        <!-- MIDDLE: document list -->
+        <section class="i-panel i-list" aria-label="Documents">
+          <div class="i-panel-head">
+            <div class="i-panel-title">Documents</div>
+            <div class="i-panel-meta"><span id="docCount">3</span> items</div>
+          </div>
+
+          <div class="i-search">
+            <input class="i-input" id="docSearch" type="search" placeholder="Search documents..." autocomplete="off" />
+          </div>
+
+          <div class="i-docs" id="docList">
+            <!-- Incidents (default visible) -->
+            <button class="i-doc is-active" type="button" data-folder="incidents" data-doc="ir-001">
+              <div class="i-doc-top">
+                <div class="i-doc-title">Incident Report 001</div>
+                <div class="i-doc-date">2420-07-03</div>
+              </div>
+              <div class="i-doc-meta">Classification: Internal • Status: Closed</div>
+              <div class="i-doc-snippet">Unscheduled access attempt. Badge mismatch. No escalation required.</div>
+            </button>
+
+            <button class="i-doc" type="button" data-folder="incidents" data-doc="ir-002">
+              <div class="i-doc-top">
+                <div class="i-doc-title">Incident Report 002</div>
+                <div class="i-doc-date">2420-08-19</div>
+              </div>
+              <div class="i-doc-meta">Classification: Internal • Status: Under Review</div>
+              <div class="i-doc-snippet">Repeat access pattern detected across terminals. Notes appended by Security.
+              </div>
+            </button>
+
+            <button class="i-doc" type="button" data-folder="incidents" data-doc="ir-003">
+              <div class="i-doc-top">
+                <div class="i-doc-title">Incident Report 003</div>
+                <div class="i-doc-date">2420-09-02</div>
+              </div>
+              <div class="i-doc-meta">Classification: Internal • Status: Restricted Routing</div>
+              <div class="i-doc-snippet">Escalation flagged. Portions redacted pending compliance approval.</div>
+            </button>
+
+            <!-- Memos -->
+            <button class="i-doc" type="button" data-folder="memos" data-doc="memo-compliance-01" hidden>
+              <div class="i-doc-top">
+                <div class="i-doc-title">Memo: Compliance Reminder</div>
+                <div class="i-doc-date">2420-06-10</div>
+              </div>
+              <div class="i-doc-meta">From: Compliance • Distribution: All</div>
+              <div class="i-doc-snippet">Language guidelines for internal communications and external inquiries.</div>
+            </button>
+
+            <button class="i-doc" type="button" data-folder="memos" data-doc="memo-it-01" hidden>
+              <div class="i-doc-top">
+                <div class="i-doc-title">Memo: IT Security Notice</div>
+                <div class="i-doc-date">2420-08-21</div>
+              </div>
+              <div class="i-doc-meta">From: IT Security • Priority: High</div>
+              <div class="i-doc-snippet">Credential hygiene and terminal access procedures updated.</div>
+            </button>
+
+            <button class="i-doc" type="button" data-folder="memos" data-doc="memo-ops-01" hidden>
+              <div class="i-doc-top">
+                <div class="i-doc-title">Memo: Operations Scheduling</div>
+                <div class="i-doc-date">2420-09-05</div>
+              </div>
+              <div class="i-doc-meta">From: Ops • Distribution: Regional Leads</div>
+              <div class="i-doc-snippet">Shift adjustments and coverage requirements. Attachments referenced.</div>
+            </button>
+
+            <!-- Audits -->
+            <button class="i-doc" type="button" data-folder="audits" data-doc="audit-log-01" hidden>
+              <div class="i-doc-top">
+                <div class="i-doc-title">Audit Log Excerpt A</div>
+                <div class="i-doc-date">2420-08</div>
+              </div>
+              <div class="i-doc-meta">System: Access Gateway • Range: 30 days</div>
+              <div class="i-doc-snippet">Timestamped entries showing access attempts, denials, and overrides.</div>
+            </button>
+
+            <button class="i-doc" type="button" data-folder="audits" data-doc="audit-log-02" hidden>
+              <div class="i-doc-top">
+                <div class="i-doc-title">Audit Log Excerpt B</div>
+                <div class="i-doc-date">2420-09</div>
+              </div>
+              <div class="i-doc-meta">System: Terminal Network • Range: 14 days</div>
+              <div class="i-doc-snippet">Anomalous terminal requests observed. Forwarded to Security review.</div>
+            </button>
+
+            <!-- Attachments -->
+            <button class="i-doc" type="button" data-folder="attachments" data-doc="att-01" hidden>
+              <div class="i-doc-top">
+                <div class="i-doc-title">Attachment: Floor Map (Partial)</div>
+                <div class="i-doc-date">2420-04-12</div>
+              </div>
+              <div class="i-doc-meta">File: MAP_PARTIAL.pdf • Note: redacted</div>
+              <div class="i-doc-snippet">Sections removed. Routing markers present. Refer to Memo: Ops.</div>
+            </button>
+
+            <button class="i-doc" type="button" data-folder="attachments" data-doc="att-02" hidden>
+              <div class="i-doc-top">
+                <div class="i-doc-title">Attachment: Incident Photos</div>
+                <div class="i-doc-date">2420-09-02</div>
+              </div>
+              <div class="i-doc-meta">File: IR003_IMAGES.zip • Access: Limited</div>
+              <div class="i-doc-snippet">Preview not available in-browser. Request access through Security.</div>
+            </button>
+          </div>
+        </section>
+
+        <!-- RIGHT: preview -->
+        <section class="i-panel i-preview" aria-label="Preview">
+          <div class="i-panel-head">
+            <div class="i-panel-title">Preview</div>
+            <div class="i-panel-meta" id="previewMeta">IR-001</div>
+          </div>
+
+          <article class="i-docview" id="docView">
+            <div class="i-docview-head">
+              <div class="i-class">Classification: Internal</div>
+              <h2 class="i-h2" id="pvTitle">Incident Report 001</h2>
+              <div class="i-byline">
+                <span id="pvDate">2420-07-03</span> •
+                <span id="pvFrom">Security Operations</span> •
+                <span id="pvStatus">Closed</span>
+              </div>
+            </div>
+
+            <div class="i-body" id="pvBody">
+              <p><strong>Summary:</strong> Unscheduled access attempt identified at a regional terminal. Badge ID did
+                not match assigned employee profile. Access denied automatically.</p>
+              <p><strong>Notes:</strong> Pattern does not currently match known intrusion signatures. Recommend
+                monitoring for repeat attempts within 30 days.</p>
+            </div>
+
+
+            <div class="i-actions">
+              <button class="i-btn" type="button" data-open-modal data-doc="ir-001">
+                Open document
+              </button>
+              <a class="i-btn i-btn-ghost" href="#" onclick="return false;">Request access</a>
+            </div>
+          </article>
+        </section>
+      </section>
+    </div>
+    <!-- INTERNAL DOC MODAL -->
+    <div class="i-modal" id="docModal" aria-hidden="true">
+      <div class="i-modal-backdrop" data-close></div>
+
+      <div class="i-modal-panel" role="dialog" aria-modal="true" aria-label="Internal document viewer">
+        <div class="i-modal-head">
+          <div class="i-modal-head-left">
+            <div class="i-modal-tag" id="docTag">INTERNAL</div>
+            <div class="i-modal-meta" id="docMetaLine">IR-001 • Security Operations • Closed</div>
+          </div>
+
+          <button class="i-modal-close" type="button" data-close aria-label="Close document">×</button>
+        </div>
+
+        <article class="i-paper" id="docPaper">
+          <header class="i-paper-head">
+            <img class="i-redacted-banner" src="images/HarmonyFoods_Redacted.png" alt="Redacted banner" />
+            <div class="i-paper-kicker" id="docKicker">Classification: Internal</div>
+            <h2 class="i-paper-title" id="docTitle">Incident Report 001</h2>
+            <div class="i-paper-byline" id="docByline">2420-07-03 • Security Operations • Closed</div>
+          </header>
+
+          <div class="i-paper-body" id="docBody">
+            <!-- Full document text will be injected by internal.js in Step 3 Part 2 -->
+          </div>
+
+          <footer class="i-paper-foot">
+            <div class="i-paper-actions">
+              <button class="i-btn" type="button" onclick="window.print()">Print</button>
+              <button class="i-btn i-btn-ghost" type="button" data-close>Return to archive</button>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+    <!-- /INTERNAL DOC MODAL -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="badge">
+            <span class="pill-dot" aria-hidden="true"></span>
+            <div>
+              <div style="font-weight:600;">Harmony Foods</div>
+              <small>Part of everyday life.</small>
+            </div>
+          </div>
+          <div style="margin-top:14px;">
+            <small>© 2420 Harmony Foods. All rights reserved.</small>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a><br>
+          <a href="brands.html">Brands</a><br>
+          <a href="sourcing.html">Sourcing</a><br>
+          <a href="careers.html">Careers</a><br>
+        </div>
+
+        <div class="footer-col">
+          <h4>Information</h4>
+          <a href="investors.html">Investor Relations</a><br>
+          <a href="contact.html">Contact</a><br>
+          <a href="privacy.html">Privacy</a><br>
+          <a href="terms.html">Terms</a><br>
+          <a href="access.html">Employee Access</a>
+          <p class="footer-note">For authorized personnel and approved partners.</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Internal Document Modal -->
+  <div class="i-modal" id="docModal" aria-hidden="true">
+    <div class="i-modal-backdrop" data-close></div>
+
+    <div class="i-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="i-modal-head">
+        <div>
+          <div class="i-modal-tag" id="modalTag">INTERNAL</div>
+          <div class="i-modal-meta" id="modalMeta">HF-ACCESS / LOGGED SESSION</div>
+        </div>
+
+        <button class="i-modal-close" type="button" aria-label="Close" data-close>×</button>
+      </div>
+
+      <div class="i-paper">
+        <div class="i-paper-head">
+          <img class="i-redacted-banner" src="images/HarmonyFoods_Redacted.png" alt="Redacted" />
+          <div class="i-paper-kicker" id="modalKicker">INTERNAL SYSTEM REVIEW</div>
+          <h2 class="i-paper-title" id="modalTitle">Document</h2>
+          <div class="i-paper-byline" id="modalByline">—</div>
+        </div>
+
+        <div class="i-paper-body" id="modalBody"></div>
+
+        <div class="i-paper-foot">
+
+          <div class="i-paper-actions">
+            <a class="i-btn" href="#" onclick="return false;">Download</a>
+            <a class="i-btn i-btn-ghost" href="#" onclick="return false;">Request clearance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/internal.js"></script>
+</body>
+
+</html>
